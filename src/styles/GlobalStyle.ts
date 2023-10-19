@@ -45,9 +45,22 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 60%;
     }
 
+    body {
+        box-sizing: border-box;
+
+        width: 100vw;
+        height: 100vh;
+    }
+
+    button {
+        all: unset;
+        cursor: pointer;
+    }
+
     @media (min-width: 700px) {
         :root {
             font-size: 62.5%;
+            
         }
     }
 `;

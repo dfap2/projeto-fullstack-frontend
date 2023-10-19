@@ -1,13 +1,11 @@
-import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 
-const Login = () => {
+const LandingPage = () => {
     return (
         <>
             <Header />
-            <Footer />
         </>
     );
 };
 
-export default Login;
+export default LandingPage;
