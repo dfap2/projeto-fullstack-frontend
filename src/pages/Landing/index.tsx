@@ -1,12 +1,17 @@
-import AnnouncementList from "../../components/Cards/AnnouncementList";
+import AnnouncementsList from "../../components/Cards/AnnouncementsList";
+import CommentsList from "../../components/Cards/CommentsList";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import { StyledMain } from "./style";
 
 const LandingPage = () => {
     return (
         <>
             <Header />
-            <AnnouncementList />
+            <StyledMain>
+                <AnnouncementsList />
+                <CommentsList />
+            </StyledMain>
             <Footer />
         </>
     );

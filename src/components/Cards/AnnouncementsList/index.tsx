@@ -1,7 +1,7 @@
-import AnnouncementCard from "./Announcement";
+import AnnouncementCard from "./AnnouncementCard";
 import { StyledAnnouncementList } from "./style";
 
-const AnnouncementList = () => {
+const AnnouncementsList = () => {
     return (
         <StyledAnnouncementList>
             <AnnouncementCard id="teste" key={crypto.randomUUID()} />
@@ -10,4 +10,4 @@ const AnnouncementList = () => {
     );
 };
 
-export default AnnouncementList;
+export default AnnouncementsList;

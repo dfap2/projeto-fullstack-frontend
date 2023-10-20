@@ -12,20 +12,20 @@ export const StyledHeader = styled.header`
     .header-container {
         display: flex;
         justify-content: space-between;
-        max-width: 1600px;
+        max-width: 160rem;
         width: 100%;
     }
 
     .header-container > img {
-        margin-left: 20px;
+        margin-left: 2rem;
     }
 
     .desktop-buttons {
         display: none;
     }
 
-    @media (min-width: 700px) {
-        padding-inline: 59px;
+    @media (min-width: 70rem) {
+        padding-inline: 5.9rem;
 
         .header-container > img {
             margin-left: 0;
