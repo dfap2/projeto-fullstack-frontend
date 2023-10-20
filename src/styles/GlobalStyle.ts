@@ -2,10 +2,10 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     :root {
-        --brand-color-1: #4529E6;
-        --brand-color-2: #5126EA;
-        --brand-color-3: #B0A6F0;
-        --brand-color-4: #EDEAFD;
+        --brand-1: #4529E6;
+        --brand-2: #5126EA;
+        --brand-3: #B0A6F0;
+        --brand-4: #EDEAFD;
 
         --grey-0: #0B0D0D;
         --grey-1: #212529;
@@ -41,6 +41,8 @@ export const GlobalStyle = createGlobalStyle`
         --random-12: #30007D;
 
         --radius-default: 4px;
+
+        margin: 0px;
 
         font-size: 60%;
     }
