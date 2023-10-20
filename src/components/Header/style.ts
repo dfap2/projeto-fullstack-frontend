@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    width: 100%;
-    height: 80px;
+    height: 8rem;
+    width: 100vw;
 
     .header-container {
         display: flex;
