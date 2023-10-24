@@ -4,7 +4,7 @@ export const StyledCommentCard = styled.div`
     box-sizing: border-box;
 
     width: 100%;
-    height: 11.6rem;
+    height: 21.2rem;
 
     .user-container {
         display: flex;
@@ -43,5 +43,12 @@ export const StyledCommentCard = styled.div`
 
     p {
         color: var(--grey-2);
+    }
+
+    @media (min-width: 700px) {
+        height: 11.6rem;
+
+        width: auto;
+        min-width: 28.3rem;
     }
 `;

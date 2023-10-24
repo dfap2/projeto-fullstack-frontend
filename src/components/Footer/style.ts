@@ -2,15 +2,14 @@ import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
     display: flex;
+    /* position: sticky; */
     align-items: center;
     justify-content: center;
-    position: absolute;
     box-sizing: border-box;
 
-    bottom: 0;
     padding-block: 45px;
-
     width: 100vw;
+    height: 28.1rem;
     min-height: 140px;
 
     background-color: var(--grey-0);
@@ -24,44 +23,46 @@ export const StyledFooter = styled.footer`
         gap: 45px;
 
         color: white;
-    }
 
-    .footer-container > img {
-        align-self: center;
+        img {
+            align-self: center;
 
-        width: 153.02px;
-        height: 26.34px;
-    }
+            width: 153.02px;
+            height: 26.34px;
+        }
 
-    .footer-container > span {
-        align-self: center;
-    }
+        span {
+            align-self: center;
+        }
 
-    .footer-container > button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-self: center;
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-self: center;
 
-        width: 53px;
-        height: 50px;
+            width: 53px;
+            height: 50px;
 
-        background-color: var(--grey-1);
-        border-radius: var(--radius-default);
-    }
+            background-color: var(--grey-1);
+            border-radius: var(--radius-default);
 
-    .uparrow-img {
-        width: 10px;
-        height: 18px;
+            .uparrow-img {
+                width: 10px;
+                height: 18px;
+            }
+        }
     }
 
     @media (min-width: 700px) {
+        height: auto;
+
         .footer-container {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
 
-            padding-inline: 59px;
+            padding-inline: 5.9rem;
             width: 100%;
         }
     }

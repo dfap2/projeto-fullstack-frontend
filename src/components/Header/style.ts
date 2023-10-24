@@ -10,6 +10,7 @@ export const StyledHeader = styled.header`
     width: 100vw;
 
     .header-container {
+        box-sizing: border-box;
         display: flex;
         justify-content: space-between;
         max-width: 160rem;

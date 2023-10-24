@@ -10,7 +10,8 @@ const LandingPage = () => {
             <Header />
             <StyledMain>
                 <AnnouncementsList />
-                <CommentsList />
+                {/* <CommentsList />
+                <CommentsList /> */}
             </StyledMain>
             <Footer />
         </>

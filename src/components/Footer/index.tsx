@@ -8,7 +8,7 @@ const Footer = () => {
             <StyledFooter>
                 <div className="footer-container">
                     <img src={logo} alt="logo" />
-                    <span className="--body-2-400">
+                    <span className="body-2-400">
                         © 2022 - Todos os direitos reservados.
                     </span>
                     <button>

@@ -42,7 +42,7 @@ export const GlobalStyle = createGlobalStyle`
 
         --radius-default: 4px;
 
-        margin: 0px;
+        margin: 0rem;
 
         font-size: 60%;
     }
@@ -51,7 +51,7 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
 
         width: 100vw;
-        height: 100vh;
+        min-height: 100vh;
     }
 
     button {
