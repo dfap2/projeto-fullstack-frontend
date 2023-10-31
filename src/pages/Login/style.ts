@@ -1,7 +1,18 @@
 import styled from "styled-components";
 
-export const StyledMain = styled.main`
-    margin: 0 auto;
+export const StyledPageContainer = styled.div`
+    display: flex;
+    flex-direction: column;
 
-    width: 160rem;
+    main {
+        flex: 1;
+        margin: 0 auto;
+        width: 160rem;
+        max-width: 90%;
+    }
+
+    @media (min-width: 700px) {
+    }
 `;
+
+export const StyledMain = styled.main``;

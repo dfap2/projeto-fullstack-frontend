@@ -19,6 +19,8 @@ export const GlobalStyle = createGlobalStyle`
         --grey-9: #F8F9FA;
         --grey-10: #FDFDFD;
 
+        --white: #FFFFFF;
+
         --alert-color-1: #CD2B31;
         --alert-color-2: #FDD8D8;
         --alert-color-3: #FFE5E5;
@@ -50,8 +52,8 @@ export const GlobalStyle = createGlobalStyle`
     body {
         box-sizing: border-box;
 
-        width: 100vw;
-        min-height: 100vh;
+        /* width: 100vw; */
+        /* min-height: 100vh; */
     }
 
     button {

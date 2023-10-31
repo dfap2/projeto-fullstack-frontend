@@ -9,6 +9,8 @@ export const StyledHeader = styled.header`
     height: 8rem;
     width: 100vw;
 
+    background-color: white;
+
     .header-container {
         box-sizing: border-box;
         display: flex;

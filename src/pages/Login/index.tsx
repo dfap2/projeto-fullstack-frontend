@@ -1,16 +1,18 @@
-import AnnouncementList from "../../components/Cards/AnnouncementsList";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import { StyledMain } from "./style";
+import { LoginForm } from "../../components/Forms";
+import { StyledPageContainer } from "./style";
 
 const Login = () => {
     return (
         <>
-            <Header />
-            <StyledMain>
-                <AnnouncementList />
-            </StyledMain>
-            <Footer />
+            <StyledPageContainer>
+                <Header />
+                <main>
+                    <LoginForm />
+                </main>
+                <Footer />
+            </StyledPageContainer>
         </>
     );
 };

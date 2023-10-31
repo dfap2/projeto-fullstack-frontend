@@ -6,6 +6,8 @@ export const StyledAnnouncementCard = styled.div`
     width: 31.2rem;
     height: 36rem;
 
+    cursor: pointer;
+
     .image-container {
         box-sizing: border-box;
 
