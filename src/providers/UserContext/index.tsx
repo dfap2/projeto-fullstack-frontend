@@ -73,7 +73,9 @@ export const UserProvider = ({ children }: IUserProviderProps) => {
             localStorage.setItem("@USERID", res.data.userId.toString());
 
             navigate("/");
-        } catch (error) {}
+        } catch (error) {
+            console.error(error);
+        }
     };
 
     // const onSubmitRegister = async (data: IRegisterFormData) => {

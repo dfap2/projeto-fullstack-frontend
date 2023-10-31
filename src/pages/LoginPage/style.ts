@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
-export const StyledPageContainer = styled.div`
+export const StyledLoginPage = styled.div`
     display: flex;
     flex-direction: column;
 
+    background-color: var(--grey-8);
+
     main {
-        flex: 1;
+        height: 100vh;
         margin: 0 auto;
         width: 160rem;
         max-width: 90%;
@@ -14,5 +16,3 @@ export const StyledPageContainer = styled.div`
     @media (min-width: 700px) {
     }
 `;
-
-export const StyledMain = styled.main``;

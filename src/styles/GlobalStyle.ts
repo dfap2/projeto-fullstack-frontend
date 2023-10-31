@@ -51,9 +51,6 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         box-sizing: border-box;
-
-        /* width: 100vw; */
-        /* min-height: 100vh; */
     }
 
     button {

@@ -1,10 +1,15 @@
 import banner from "../../assets/images/banner.svg";
 import styled from "styled-components";
 
+export const StyledLandingPage = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
 export const StyledMain = styled.main`
     box-sizing: border-box;
 
-    min-height: calc(100vh - 36.1rem);
+    height: 100vh;
     margin: 0 auto;
     width: 90%;
     max-width: 160rem;
@@ -13,6 +18,7 @@ export const StyledMain = styled.main`
         min-height: calc(100vh - 22rem);
     }
 `;
+
 export const StyledBanner = styled.div`
     box-sizing: border-box;
     display: flex;

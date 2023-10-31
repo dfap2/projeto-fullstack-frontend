@@ -1,29 +1,24 @@
 import { StyledButton } from "./style";
 
-interface IButton {
+export interface IButtonProps {
     text: string;
-    type: string;
-    size: "default" | "medium";
-    buttonColor: string;
-    buttonFontColor: string;
-    buttonWidth: number | "auto" | "full";
+    $buttonSize: "default" | "medium";
+    $buttonWidth: number | "auto" | "full";
+    $buttonType: "outline-1" | "brand-1";
 }
 
 const Button = ({
     text,
-    type,
-    size,
-    buttonColor,
-    buttonFontColor,
-    buttonWidth,
-}: IButton) => {
+    $buttonSize,
+    $buttonWidth,
+    $buttonType,
+}: IButtonProps) => {
     return (
         <StyledButton
-            $buttonColor={buttonColor}
-            $buttonFontColor={buttonFontColor}
-            $buttonWidth={buttonWidth}
-            $buttonSize={size}
-            typeof={type}
+            $buttonType={$buttonType}
+            $buttonWidth={$buttonWidth}
+            $buttonSize={$buttonSize}
+            typeof="submit"
         >
             {text}
         </StyledButton>

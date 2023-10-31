@@ -20,7 +20,7 @@ const LoginForm = () => {
 
     return (
         <StyledLoginForm>
-            <h2>Login</h2>
+            <h2 className="heading-5-500">Login</h2>
             <div className="form-container">
                 <div className="form-inputs">
                     <InputField
@@ -40,14 +40,20 @@ const LoginForm = () => {
                         register={register}
                     />
                 </div>
+
                 <div className="form-footer">
                     <Button
-                        buttonColor="--brand-1"
-                        buttonFontColor="--white"
-                        buttonWidth="full"
-                        size="default"
+                        $buttonType="brand-1"
+                        $buttonWidth="full"
+                        $buttonSize="default"
                         text="Entrar"
-                        type="submit"
+                    />
+                    <span className="body-2-400">Ainda não possui conta?</span>
+                    <Button
+                        $buttonType="outline-1"
+                        $buttonWidth="full"
+                        $buttonSize="default"
+                        text="Cadastrar"
                     />
                 </div>
             </div>

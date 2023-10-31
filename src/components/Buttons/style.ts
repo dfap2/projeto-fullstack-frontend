@@ -1,11 +1,7 @@
 import styled, { css } from "styled-components";
+import { IButtonProps } from ".";
 
-export interface IStyledButtonProps {
-    $buttonSize: "default" | "medium";
-    $buttonColor: string;
-    $buttonFontColor: string;
-    $buttonWidth: "auto" | number | "full";
-}
+interface IStyledButtonProps extends Omit<IButtonProps, "text"> {}
 
 export const StyledButtonCSS = css<IStyledButtonProps>`
     box-sizing: border-box;
@@ -32,17 +28,32 @@ export const StyledButtonCSS = css<IStyledButtonProps>`
         }
     }};
 
-    ${({ $buttonColor }) => {
-        return css`
-            background-color: var(${$buttonColor});
-        `;
-    }};
+    ${({ $buttonType }) => {
+        switch ($buttonType) {
+            case "outline-1":
+                return css`
+                    color: var(--grey-0);
 
-    ${({ $buttonFontColor }) => {
-        return css`
-            color: var(${$buttonFontColor});
-        `;
-    }};
+                    background-color: white;
+                    border: 0.15rem solid var(--grey-0);
+                    &:hover {
+                        color: white;
+
+                        background-color: var(--grey-0);
+                    }
+                `;
+            case "brand-1":
+                return css`
+                    color: white;
+
+                    background-color: var(--brand-1);
+                    border: none;
+                    &:hover {
+                        background-color: var(--brand-2);
+                    }
+                `;
+        }
+    }}
 
     ${({ $buttonSize }) => {
         switch ($buttonSize) {
