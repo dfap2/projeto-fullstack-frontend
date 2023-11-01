@@ -4,7 +4,7 @@ import useUserContext from "../../../hooks/useUserContext";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { ILoginFormData } from "../../../providers/UserContext";
-import { loginFormSchema } from "./formSchemaLogin";
+import { TloginFormValues, loginFormSchema } from "./formSchemaLogin";
 import { StyledLoginForm } from "./style";
 
 const LoginForm = () => {
@@ -14,7 +14,7 @@ const LoginForm = () => {
         register,
         handleSubmit,
         formState: { errors },
-    } = useForm<ILoginFormData>({
+    } = useForm<TloginFormValues>({
         resolver: zodResolver(loginFormSchema),
     });
 
@@ -29,6 +29,7 @@ const LoginForm = () => {
                         label="Email"
                         placeholder="Digitar email"
                         error={undefined}
+                        $inputSize="default"
                         register={register}
                     />
                     <InputField
@@ -37,6 +38,7 @@ const LoginForm = () => {
                         label="Senha"
                         placeholder="Digitar senha"
                         error={undefined}
+                        $inputSize="default"
                         register={register}
                     />
                 </div>

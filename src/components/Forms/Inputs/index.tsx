@@ -1,6 +1,6 @@
-import { StyledFieldset } from "./style";
+import { IInputPropsCSS, StyledFieldset } from "./style";
 
-interface IInput {
+interface IInputProps extends IInputPropsCSS {
     id: string;
     label: string;
     type: string;
@@ -15,24 +15,23 @@ const InputField = ({
     type,
     error,
     placeholder,
+    $inputSize,
     register,
-}: IInput) => {
+}: IInputProps) => {
     return (
-        <>
-            <StyledFieldset>
-                <label id="label" htmlFor="input" className="input-label">
-                    {label}
-                </label>
-                <input
-                    type={type}
-                    id={id}
-                    className="input-placeholder"
-                    placeholder={placeholder}
-                    {...register(id)}
-                />
-                <span className="input-label">{error}</span>
-            </StyledFieldset>
-        </>
+        <StyledFieldset $inputSize={$inputSize}>
+            <label id="label" htmlFor="input" className="input-label">
+                {label}
+            </label>
+            <input
+                type={type}
+                id={id}
+                className="input-placeholder"
+                placeholder={placeholder}
+                {...register(id)}
+            />
+            <span className="input-label">{error}</span>
+        </StyledFieldset>
     );
 };
 
